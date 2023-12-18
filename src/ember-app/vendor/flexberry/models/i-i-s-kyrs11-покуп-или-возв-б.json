@@ -181,24 +181,10 @@
           "name": "статус",
           "caption": "Статус",
           "hidden": false,
-          "index": 6
+          "index": 3
         }
       ],
       "belongsTo": [
-        {
-          "lookupValue": null,
-          "lookupValueField": null,
-          "relationName": "Перевозчик1",
-          "belongsTo": [],
-          "hidden": false,
-          "attrs": [],
-          "index": 3,
-          "type": "default",
-          "caption": "",
-          "name": "перевозчик1",
-          "relatedTo": "i-i-s-kyrs11-перевозчик1",
-          "inverse": null
-        },
         {
           "lookupValue": "Наименование",
           "lookupValueField": "наименование",
@@ -218,6 +204,20 @@
           "caption": "Место расчета",
           "name": "билетнаяКасса",
           "relatedTo": "i-i-s-kyrs11-билетная-касса",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "Перевозчик1",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 6,
+          "type": "standard",
+          "caption": "Перевозчик",
+          "name": "перевозчик1",
+          "relatedTo": "i-i-s-kyrs11-перевозчик1",
           "inverse": null
         }
       ],

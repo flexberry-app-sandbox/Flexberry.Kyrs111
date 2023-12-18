@@ -103,13 +103,13 @@ export let defineProjections = function (modelClass) {
     дата: attr('Дата', { index: 0 }),
     пунктОтправ: attr('Пункт отправления', { index: 1 }),
     пунктНазнач: attr('Пункт назначения', { index: 2 }),
+    статус: attr('Статус', { index: 3 }),
     билетнаяКасса: belongsTo('i-i-s-kyrs11-билетная-касса', 'Место расчета', {
       адрес: attr('Адрес расчета', { index: 5 })
     }, { index: 4, displayMemberPath: 'наименование' }),
-    статус: attr('Статус', { index: 6 }),
-    перевозчик1: belongsTo('i-i-s-kyrs11-перевозчик1', '', {
+    перевозчик1: belongsTo('i-i-s-kyrs11-перевозчик1', 'Перевозчик', {
 
-    }, { index: 3 }),
+    }, { index: 6, displayMemberPath: 'наименование' }),
     покупкаБилета: hasMany('i-i-s-kyrs11-покупка-билета', 'Покупка билета', {
       покупатель: belongsTo('i-i-s-kyrs11-покупатель', 'Покупатель', {
         банковскийСчет: attr('Банковский счет', { index: 1 })

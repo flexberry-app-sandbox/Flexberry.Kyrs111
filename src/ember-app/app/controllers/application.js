@@ -28,24 +28,25 @@ export default Controller.extend({
             link: 'i-i-s-kyrs11-перевозчик1-l',
             caption: i18n.t('forms.application.sitemap.билеты.i-i-s-kyrs11-перевозчик1-l.caption'),
             title: i18n.t('forms.application.sitemap.билеты.i-i-s-kyrs11-перевозчик1-l.title'),
+            icon: 'tasks',
             children: null
           }, {
             link: 'i-i-s-kyrs11-покупатель-l',
             caption: i18n.t('forms.application.sitemap.билеты.i-i-s-kyrs11-покупатель-l.caption'),
             title: i18n.t('forms.application.sitemap.билеты.i-i-s-kyrs11-покупатель-l.title'),
-            icon: 'phone',
+            icon: 'suitcase',
             children: null
           }, {
             link: 'i-i-s-kyrs11-билетная-касса-l',
             caption: i18n.t('forms.application.sitemap.билеты.i-i-s-kyrs11-билетная-касса-l.caption'),
             title: i18n.t('forms.application.sitemap.билеты.i-i-s-kyrs11-билетная-касса-l.title'),
-            icon: 'folder open',
+            icon: 'building',
             children: null
           }, {
             link: 'i-i-s-kyrs11-покуп-или-возв-б-l',
             caption: i18n.t('forms.application.sitemap.билеты.i-i-s-kyrs11-покуп-или-возв-б-l.caption'),
             title: i18n.t('forms.application.sitemap.билеты.i-i-s-kyrs11-покуп-или-возв-б-l.title'),
-            icon: 'tasks',
+            icon: 'building',
             children: null
           }]
         }, {
@@ -57,19 +58,19 @@ export default Controller.extend({
             link: 'i-i-s-kyrs11-билетная-касса-l',
             caption: i18n.t('forms.application.sitemap.обслуживание.i-i-s-kyrs11-билетная-касса-l.caption'),
             title: i18n.t('forms.application.sitemap.обслуживание.i-i-s-kyrs11-билетная-касса-l.title'),
-            icon: 'briefcase',
+            icon: 'building',
             children: null
           }, {
             link: 'i-i-s-kyrs11-обслуживание-l',
             caption: i18n.t('forms.application.sitemap.обслуживание.i-i-s-kyrs11-обслуживание-l.caption'),
             title: i18n.t('forms.application.sitemap.обслуживание.i-i-s-kyrs11-обслуживание-l.title'),
-            icon: 'phone',
+            icon: 'tags',
             children: null
           }, {
             link: 'i-i-s-kyrs11-оператор-l',
             caption: i18n.t('forms.application.sitemap.обслуживание.i-i-s-kyrs11-оператор-l.caption'),
             title: i18n.t('forms.application.sitemap.обслуживание.i-i-s-kyrs11-оператор-l.title'),
-            icon: 'briefcase',
+            icon: 'address card',
             children: null
           }]
         }

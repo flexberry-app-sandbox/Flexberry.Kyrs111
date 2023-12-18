@@ -47,15 +47,16 @@ namespace IIS.Kyrs11
             "Дата as \'Дата\'",
             "ПунктОтправ as \'Пункт отправления\'",
             "ПунктНазнач as \'Пункт назначения\'",
-            "Перевозчик1",
+            "Статус as \'Статус\'",
             "БилетнаяКасса as \'Место расчета\'",
             "БилетнаяКасса.Адрес as \'Адрес расчета\'",
-            "Статус as \'Статус\'"})]
+            "Перевозчик1 as \'Перевозчик\'"})]
     [AssociatedDetailViewAttribute("ПокупИлиВозвБL", "ПокупкаБилета", "ПокупкаБилетаE", false, "", "Покупка билета", true, new string[] {
             ""})]
     [AssociatedDetailViewAttribute("ПокупИлиВозвБL", "ВозвратБилета", "ВозвратБилетаE", false, "", "Возврат билета", true, new string[] {
             ""})]
     [MasterViewDefineAttribute("ПокупИлиВозвБL", "БилетнаяКасса", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Наименование")]
+    [MasterViewDefineAttribute("ПокупИлиВозвБL", "Перевозчик1", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Наименование")]
     public class ПокупИлиВозвБ : ICSSoft.STORMNET.DataObject
     {
         
