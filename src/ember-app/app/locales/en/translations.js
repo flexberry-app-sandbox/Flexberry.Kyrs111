@@ -103,10 +103,6 @@ $.extend(true, translations, {
         билеты: {
           caption: 'Билеты',
           title: 'Билеты',
-          'i-i-s-kyrs11-покуп-или-возв-б-l': {
-            caption: 'Покупка или возврат билета',
-            title: ''
-          },
           'i-i-s-kyrs11-перевозчик1-l': {
             caption: 'Перевозчик',
             title: ''
@@ -118,6 +114,10 @@ $.extend(true, translations, {
           'i-i-s-kyrs11-билетная-касса-l': {
             caption: 'Билетная касса',
             title: 'Билетная касса'
+          },
+          'i-i-s-kyrs11-покуп-или-возв-б-l': {
+            caption: 'Покупка или возврат билета',
+            title: ''
           }
         },
         обслуживание: {

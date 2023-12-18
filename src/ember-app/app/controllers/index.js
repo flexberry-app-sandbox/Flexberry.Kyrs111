@@ -19,28 +19,28 @@ export default Controller.extend({
           caption: i18n.t('forms.application.sitemap.билеты.caption'),
           title: i18n.t('forms.application.sitemap.билеты.title'),
           children: [{
-            link: 'i-i-s-kyrs11-покуп-или-возв-б-l',
-            caption: i18n.t('forms.application.sitemap.билеты.i-i-s-kyrs11-покуп-или-возв-б-l.caption'),
-            title: i18n.t('forms.application.sitemap.билеты.i-i-s-kyrs11-покуп-или-возв-б-l.title'),
-            icon: 'phone',
-            children: null
-          }, {
             link: 'i-i-s-kyrs11-перевозчик1-l',
             caption: i18n.t('forms.application.sitemap.билеты.i-i-s-kyrs11-перевозчик1-l.caption'),
             title: i18n.t('forms.application.sitemap.билеты.i-i-s-kyrs11-перевозчик1-l.title'),
-            icon: 'list',
+            icon: 'chart bar',
             children: null
           }, {
             link: 'i-i-s-kyrs11-покупатель-l',
             caption: i18n.t('forms.application.sitemap.билеты.i-i-s-kyrs11-покупатель-l.caption'),
             title: i18n.t('forms.application.sitemap.билеты.i-i-s-kyrs11-покупатель-l.title'),
-            icon: 'table',
+            icon: 'tasks',
             children: null
           }, {
             link: 'i-i-s-kyrs11-билетная-касса-l',
             caption: i18n.t('forms.application.sitemap.билеты.i-i-s-kyrs11-билетная-касса-l.caption'),
             title: i18n.t('forms.application.sitemap.билеты.i-i-s-kyrs11-билетная-касса-l.title'),
-            icon: 'suitcase',
+            icon: 'table',
+            children: null
+          }, {
+            link: 'i-i-s-kyrs11-покуп-или-возв-б-l',
+            caption: i18n.t('forms.application.sitemap.билеты.i-i-s-kyrs11-покуп-или-возв-б-l.caption'),
+            title: i18n.t('forms.application.sitemap.билеты.i-i-s-kyrs11-покуп-или-возв-б-l.title'),
+            icon: 'list',
             children: null
           }]
         }, {
@@ -52,19 +52,19 @@ export default Controller.extend({
             link: 'i-i-s-kyrs11-билетная-касса-l',
             caption: i18n.t('forms.application.sitemap.обслуживание.i-i-s-kyrs11-билетная-касса-l.caption'),
             title: i18n.t('forms.application.sitemap.обслуживание.i-i-s-kyrs11-билетная-касса-l.title'),
-            icon: 'folder',
+            icon: 'table',
             children: null
           }, {
             link: 'i-i-s-kyrs11-обслуживание-l',
             caption: i18n.t('forms.application.sitemap.обслуживание.i-i-s-kyrs11-обслуживание-l.caption'),
             title: i18n.t('forms.application.sitemap.обслуживание.i-i-s-kyrs11-обслуживание-l.title'),
-            icon: 'address card',
+            icon: 'edit',
             children: null
           }, {
             link: 'i-i-s-kyrs11-оператор-l',
             caption: i18n.t('forms.application.sitemap.обслуживание.i-i-s-kyrs11-оператор-l.caption'),
             title: i18n.t('forms.application.sitemap.обслуживание.i-i-s-kyrs11-оператор-l.title'),
-            icon: 'book',
+            icon: 'suitcase',
             children: null
           }]
         }

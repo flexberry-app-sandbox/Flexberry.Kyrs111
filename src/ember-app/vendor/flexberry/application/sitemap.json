@@ -9,13 +9,6 @@
       "title": "Билеты",
       "children": [
         {
-          "link": "i-i-s-kyrs11-покуп-или-возв-б-l",
-          "menuName": null,
-          "caption": "Покупка или возврат билета",
-          "title": "",
-          "children": null
-        },
-        {
           "link": "i-i-s-kyrs11-перевозчик1-l",
           "menuName": null,
           "caption": "Перевозчик",
@@ -34,6 +27,13 @@
           "menuName": null,
           "caption": "Билетная касса",
           "title": "Билетная касса",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kyrs11-покуп-или-возв-б-l",
+          "menuName": null,
+          "caption": "Покупка или возврат билета",
+          "title": "Покупка или возврат билета",
           "children": null
         }
       ]
