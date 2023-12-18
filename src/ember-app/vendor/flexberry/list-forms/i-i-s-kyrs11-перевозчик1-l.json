@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kyrs11-перевозчик1-e",
+  "editForm": "i-i-s-kyrs11-перевозчик1-e",
+  "external": false,
+  "caption": "Перевозчик1",
+  "name": "IISKyrs11Перевозчик1L",
+  "className": "Перевозчик1L",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kyrs11-перевозчик1",
+      "modelProjection": "Перевозчик1L"
+    }
+  ]
+}

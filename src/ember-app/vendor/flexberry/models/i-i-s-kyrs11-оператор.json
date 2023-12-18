@@ -1,0 +1,117 @@
+﻿{
+  "name": "IISKyrs11Оператор",
+  "modelName": "i-i-s-kyrs11-оператор",
+  "className": "Оператор",
+  "nameSpace": "IIS.Kyrs11",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "iD",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номерПаспорта",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "серияПаспорта",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "фИО",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ОператорE",
+      "modelName": "i-i-s-kyrs11-оператор",
+      "attrs": [
+        {
+          "name": "iD",
+          "caption": "ID",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "фИО",
+          "caption": "ФИО",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "серияПаспорта",
+          "caption": "Серия паспорта",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "номерПаспорта",
+          "caption": "Номер паспорта",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ОператорL",
+      "modelName": "i-i-s-kyrs11-оператор",
+      "attrs": [
+        {
+          "name": "iD",
+          "caption": "ID",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "фИО",
+          "caption": "ФИО",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "серияПаспорта",
+          "caption": "Серия паспорта",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "номерПаспорта",
+          "caption": "Номер паспорта",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

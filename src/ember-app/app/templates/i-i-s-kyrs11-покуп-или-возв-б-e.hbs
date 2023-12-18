@@ -1,0 +1,142 @@
+<h3 class="ui header">{{t "forms.i-i-s-kyrs11-покуп-или-возв-б-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-kyrs11-покуп-или-возв-б-e.дата-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.дата
+      class=(if (v-get validationModel "дата" "isInvalid") "error")
+      data-test-i-i-s-kyrs11-покуп-или-возв-б-e-дата=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "дата" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.пунктОтправ
+      class=(if (v-get validationModel "пунктОтправ" "isInvalid") "error")
+      label=(t "forms.i-i-s-kyrs11-покуп-или-возв-б-e.пунктОтправ-caption")
+      data-test-i-i-s-kyrs11-покуп-или-возв-б-e-пунктОтправ=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "пунктОтправ" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.пунктНазнач
+      class=(if (v-get validationModel "пунктНазнач" "isInvalid") "error")
+      label=(t "forms.i-i-s-kyrs11-покуп-или-возв-б-e.пунктНазнач-caption")
+      data-test-i-i-s-kyrs11-покуп-или-возв-б-e-пунктНазнач=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "пунктНазнач" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-kyrs11-покуп-или-возв-б-e.перевозчик1-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.перевозчик1
+      displayAttributeName="наименование"
+      autocomplete=true
+      relationName="перевозчик1"
+      projection="Перевозчик1L"
+      title=(t "forms.i-i-s-kyrs11-покуп-или-возв-б-e.перевозчик1-caption")
+      readonly=readonly
+      componentName="перевозчик1Lookup"
+      class=(if (v-get validationModel "перевозчик1" "isInvalid") "error")
+      data-test-i-i-s-kyrs11-покуп-или-возв-б-e-перевозчик1=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "перевозчик1" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-kyrs11-покуп-или-возв-б-e.билетнаяКасса-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.билетнаяКасса
+      displayAttributeName="наименование"
+      autocomplete=true
+      relationName="билетнаяКасса"
+      projection="БилетнаяКассаL"
+      title=(t "forms.i-i-s-kyrs11-покуп-или-возв-б-e.билетнаяКасса-caption")
+      readonly=readonly
+      componentName="билетнаяКассаLookup"
+      class=(if (v-get validationModel "билетнаяКасса" "isInvalid") "error")
+      data-test-i-i-s-kyrs11-покуп-или-возв-б-e-билетнаяКасса=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "билетнаяКасса" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.билетнаяКасса.адрес
+      class=(if (v-get validationModel.билетнаяКасса "адрес" "isInvalid") "error")
+      label=(t "forms.i-i-s-kyrs11-покуп-или-возв-б-e.билетнаяКасса.адрес-caption")
+      data-test-i-i-s-kyrs11-покуп-или-возв-б-e-билетнаяКасса-адрес=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.билетнаяКасса "адрес" "message")}}
+  </div>
+  <div class="field" data-test-i-i-s-kyrs11-покуп-или-возв-б-e-статус="true">
+    <label>{{t "forms.i-i-s-kyrs11-покуп-или-возв-б-e.статус-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "i-i-s-kyrs11-статус")
+      value=model.статус
+      class=(if (v-get validationModel "статус" "isInvalid") "error")
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "статус" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-kyrs11-покуп-или-возв-б-e.покупкаБилета-caption"}}</label>
+    {{flexberry-groupedit
+      componentName="покупкаБилетаGroupEdit"
+      mainModelProjection=modelProjection
+      modelProjection=modelProjection.attributes.покупкаБилета
+      content=model.покупкаБилета
+      readonly=readonly
+      orderable=false
+      class=(if (v-get validationModel "покупкаБилета" "isInvalid") "error")
+      data-test-i-i-s-kyrs11-покуп-или-возв-б-e-покупкаБилета=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "покупкаБилета" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-kyrs11-покуп-или-возв-б-e.возвратБилета-caption"}}</label>
+    {{flexberry-groupedit
+      componentName="возвратБилетаGroupEdit"
+      mainModelProjection=modelProjection
+      modelProjection=modelProjection.attributes.возвратБилета
+      content=model.возвратБилета
+      readonly=readonly
+      orderable=false
+      class=(if (v-get validationModel "возвратБилета" "isInvalid") "error")
+      data-test-i-i-s-kyrs11-покуп-или-возв-б-e-возвратБилета=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "возвратБилета" "message")}}
+  </div>
+</form>

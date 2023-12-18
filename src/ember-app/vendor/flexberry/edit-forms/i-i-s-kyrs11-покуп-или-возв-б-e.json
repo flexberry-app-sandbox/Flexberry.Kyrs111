@@ -1,0 +1,47 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Перевозчик1",
+      "projection": "Перевозчик1L",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "БилетнаяКасса",
+      "projection": "БилетнаяКассаL",
+      "detailModelName": null
+    },
+    {
+      "master": "покупатель",
+      "displayAttributeName": "фИО",
+      "required": true,
+      "relationName": "ПокупкаБилета.Покупатель",
+      "projection": "ПокупательL",
+      "detailModelName": "i-i-s-kyrs11-покупка-билета"
+    },
+    {
+      "master": "покупатель",
+      "displayAttributeName": "фИО",
+      "required": true,
+      "relationName": "ВозвратБилета.Покупатель",
+      "projection": "ПокупательL",
+      "detailModelName": "i-i-s-kyrs11-возврат-билета"
+    }
+  ],
+  "external": false,
+  "caption": "Покуп или возв Б",
+  "name": "IISKyrs11ПокупИлиВозвБE",
+  "className": "ПокупИлиВозвБE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kyrs11-покуп-или-возв-б",
+      "modelProjection": "ПокупИлиВозвБE"
+    }
+  ]
+}

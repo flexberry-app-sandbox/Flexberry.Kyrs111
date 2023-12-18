@@ -1,0 +1,230 @@
+﻿{
+  "name": "IISKyrs11Обслуживание",
+  "modelName": "i-i-s-kyrs11-обслуживание",
+  "className": "Обслуживание",
+  "nameSpace": "IIS.Kyrs11",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "времяПроверки",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "готовКРаботе",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "датаПроверки",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "чековаяЛента",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "билетнаяКасса",
+      "relatedTo": "i-i-s-kyrs11-билетная-касса",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "оператор",
+      "relatedTo": "i-i-s-kyrs11-оператор",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ОбслуживаниеE",
+      "modelName": "i-i-s-kyrs11-обслуживание",
+      "attrs": [
+        {
+          "name": "датаПроверки",
+          "caption": "Дата проверки",
+          "hidden": false,
+          "index": 5
+        },
+        {
+          "name": "времяПроверки",
+          "caption": "Время проверки",
+          "hidden": false,
+          "index": 6
+        },
+        {
+          "name": "чековаяЛента",
+          "caption": "Чековая лента",
+          "hidden": false,
+          "index": 7
+        },
+        {
+          "name": "готовКРаботе",
+          "caption": "Готов к работе",
+          "hidden": false,
+          "index": 8
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ФИО",
+          "lookupValueField": "фИО",
+          "relationName": "Оператор",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": true,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Оператор",
+          "name": "оператор",
+          "relatedTo": "i-i-s-kyrs11-оператор",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Наименование",
+          "lookupValueField": "наименование",
+          "relationName": "БилетнаяКасса",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 3
+            },
+            {
+              "name": "адрес",
+              "caption": "Адрес",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Билетная касса",
+          "name": "билетнаяКасса",
+          "relatedTo": "i-i-s-kyrs11-билетная-касса",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ОбслуживаниеL",
+      "modelName": "i-i-s-kyrs11-обслуживание",
+      "attrs": [
+        {
+          "name": "чековаяЛента",
+          "caption": "Чековая лента",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "датаПроверки",
+          "caption": "Дата проверки",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "времяПроверки",
+          "caption": "Время проверки",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "готовКРаботе",
+          "caption": "Готов к работе",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "БилетнаяКасса",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "наименование",
+              "caption": "Наименование",
+              "hidden": false,
+              "index": 4
+            },
+            {
+              "name": "адрес",
+              "caption": "Адрес",
+              "hidden": false,
+              "index": 6
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Наименование",
+          "name": "билетнаяКасса",
+          "relatedTo": "i-i-s-kyrs11-билетная-касса",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Оператор",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "ФИО",
+          "name": "оператор",
+          "relatedTo": "i-i-s-kyrs11-оператор",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

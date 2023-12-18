@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Оператор",
+  "name": "IISKyrs11ОператорE",
+  "className": "ОператорE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kyrs11-оператор",
+      "modelProjection": "ОператорE"
+    }
+  ]
+}

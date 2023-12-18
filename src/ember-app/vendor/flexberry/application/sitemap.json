@@ -1,0 +1,72 @@
+﻿{
+  "applicationCaption": "Kyrs11",
+  "applicationTitle": "Kyrs11",
+  "items": [
+    {
+      "link": null,
+      "menuName": "билеты",
+      "caption": "Билеты",
+      "title": "Билеты",
+      "children": [
+        {
+          "link": "i-i-s-kyrs11-покуп-или-возв-б-l",
+          "menuName": null,
+          "caption": "Покупка или возврат билета",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kyrs11-перевозчик1-l",
+          "menuName": null,
+          "caption": "Перевозчик",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kyrs11-покупатель-l",
+          "menuName": null,
+          "caption": "Покупатель",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kyrs11-билетная-касса-l",
+          "menuName": null,
+          "caption": "Билетная касса",
+          "title": "Билетная касса",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "обслуживание",
+      "caption": "Обслуживание",
+      "title": "Обслуживание",
+      "children": [
+        {
+          "link": "i-i-s-kyrs11-билетная-касса-l",
+          "menuName": null,
+          "caption": "Билетная касса",
+          "title": "Билетная касса",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kyrs11-обслуживание-l",
+          "menuName": null,
+          "caption": "Обслуживание",
+          "title": "Обслуживание",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kyrs11-оператор-l",
+          "menuName": null,
+          "caption": "Оператор",
+          "title": "Оператор",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

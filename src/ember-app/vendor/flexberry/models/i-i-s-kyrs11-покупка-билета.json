@@ -1,0 +1,92 @@
+﻿{
+  "name": "IISKyrs11ПокупкаБилета",
+  "modelName": "i-i-s-kyrs11-покупка-билета",
+  "className": "ПокупкаБилета",
+  "nameSpace": "IIS.Kyrs11",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаПоездки",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "место",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "покупатель",
+      "relatedTo": "i-i-s-kyrs11-покупатель",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "покупИлиВозвБ",
+      "relatedTo": "i-i-s-kyrs11-покуп-или-возв-б",
+      "inverse": "покупкаБилета"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ПокупкаБилетаE",
+      "modelName": "i-i-s-kyrs11-покупка-билета",
+      "attrs": [
+        {
+          "name": "датаПоездки",
+          "caption": "Дата поездки",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "место",
+          "caption": "Место",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ФИО",
+          "lookupValueField": "фИО",
+          "relationName": "Покупатель",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "банковскийСчет",
+              "caption": "Банковский счет",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Покупатель",
+          "name": "покупатель",
+          "relatedTo": "i-i-s-kyrs11-покупатель",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Оператор",
+      "projection": "ОператорL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "БилетнаяКасса",
+      "projection": "БилетнаяКассаL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Обслуживание",
+  "name": "IISKyrs11ОбслуживаниеE",
+  "className": "ОбслуживаниеE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kyrs11-обслуживание",
+      "modelProjection": "ОбслуживаниеE"
+    }
+  ]
+}
