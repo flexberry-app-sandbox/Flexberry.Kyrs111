@@ -9,7 +9,7 @@
   "projections": [
     {
       "modelName": "i-i-s-kyrs11-покуп-или-возв-б",
-      "modelProjection": "ПокупИлиВозвБL"
+      "modelProjection": "ПокупИлиВозвБE"
     }
   ]
 }
