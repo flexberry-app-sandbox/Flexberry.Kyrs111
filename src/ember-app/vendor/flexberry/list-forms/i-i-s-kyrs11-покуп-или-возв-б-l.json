@@ -2,7 +2,7 @@
   "newForm": "i-i-s-kyrs11-покуп-или-возв-б-e",
   "editForm": "i-i-s-kyrs11-покуп-или-возв-б-e",
   "external": false,
-  "caption": "Покуп или возв Б",
+  "caption": "Покупка или возврат Билета",
   "name": "IISKyrs11ПокупИлиВозвБL",
   "className": "ПокупИлиВозвБL",
   "attrs": [],
